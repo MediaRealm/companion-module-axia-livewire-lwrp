@@ -1,12 +1,12 @@
 {
-	"id": "axia-lrwp",
-	"name": "axia-lrwp",
-	"shortname": "axia-lwrp",
-	"description": "Axia LWRP Switcher",
+	"id": "companion-module-axia-livewire-lwrp",
+	"name": "companion-module-axia-livewire-lwrp",
+	"shortname": "companion-module-axia-livewire-lwrp",
+	"description": "Axia Livewire LWRP",
 	"version": "0.0.1",
 	"license": "MIT",
-	"repository": "git+https://github.com/MediaRealm/companion-axia-livewire.git",
-	"bugs": "https://github.com/MediaRealm/companion-axia-livewire/issues",
+	"repository": "git+https://github.com/MediaRealm/companion-module-axia-livewire-lwrp.git",
+	"bugs": "https://github.com/MediaRealm/companion-module-axia-livewire-lwrp/issues",
 	"maintainers": [],
 	"legacyIds": [],
 	"runtime": {
