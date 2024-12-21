@@ -1,0 +1,46 @@
+{
+	"name": "companion-module-axia-livewire-lwrp",
+	"version": "0.0.1",
+	"main": "dist/index.js",
+	"scripts": {
+		"prepare": "husky",
+		"build": "rimraf dist && yarn build:main",
+		"build:main": "tsc -p tsconfig.build.json",
+		"dev": "tsc -p tsconfig.build.json --watch",
+		"lint:raw": "run eslint --ext .ts --ext .js --ignore-pattern dist --ignore-pattern pkg",
+		"lint": "run lint:raw .",
+		"dist": "yarn companion-module-build",
+		"eslint": "./node_modules/.bin/eslint",
+		"prettier": "./node_modules/.bin/prettier"
+	},
+	"license": "MIT",
+	"prettier": "@companion-module/tools/.prettierrc.json",
+	"lint-staged": {
+		"*.{css,json,md,scss}": [
+			"run prettier --write"
+		],
+		"*.{ts,tsx,js,jsx}": [
+			"run lint:raw --fix"
+		]
+	},
+	"engines": {
+		"node": "^18.12"
+	},
+	"dependencies": {
+		"@companion-module/base": "~1.7.0",
+		"webpack": "^5.91.0"
+	},
+	"devDependencies": {
+		"@companion-module/tools": "^1.5.0",
+		"@types/node": "^18.19.31",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.2",
+		"rimraf": "^5.0.5",
+		"typescript": "~5.1.6"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MediaRealm/companion-module-axia-livewire-lwrp.git"
+	},
+	"packageManager": "yarn@4.1.1"
+}
